@@ -7,9 +7,17 @@
     <title>Project Book</title>
   </head>
   <body>
+    <button onclick="app.projectController.createProject()">
+      Create Project
+    </button>
+    <form onsubmit="app.projectController.createProject()">
+    <input name="projectName" type="text" required>
+    <button type="submit">Submit</button>
+    </form>
 
-    <button onclick="app.projectController.createProject()">Create Project</button>
-
+    <div id="projects">
+      
+    </div>
     <script src="app/main.js" type="module"></script>
   </body>
 </html>

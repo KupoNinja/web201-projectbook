@@ -3,11 +3,12 @@ import { STORE } from "../store.js";
 
 // The services job is to control data access
 class ProjectService {
-  createProject() {
-    // TODO check all business rules before creating project
-    // TODO CREATE the project
-    let project = new Project("example project");
-    // TODO add project to the store
+  createProject(projectName) {
+    if (STORE.state.projects.length >= 3) {
+      throw new Error("You've exceeded your limit! Send us Money!!!");
+    }
+
+    let project = new Project(projectName);
     STORE.state.projects.push(project);
   }
 }
