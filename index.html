@@ -11,13 +11,15 @@
       Create Project
     </button>
     <form onsubmit="app.projectController.createProject()">
-    <input name="projectName" type="text" required>
-    <button type="submit">Submit</button>
+      <label for="projectName">Project Name</label>
+      <input name="projectName" type="text" required />
+      <label for="projectDescription">Project Description</label>
+      <input name="projectDescription" type="text" required>
+      <button type="submit">Submit</button>
     </form>
 
-    <div id="projects">
-      
-    </div>
+    <div id="projects"></div>
+    <div id="projectDetails"></div>
     <script src="app/main.js" type="module"></script>
   </body>
 </html>
