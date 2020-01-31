@@ -1,4 +1,4 @@
-![notebook](notebook.jpg)
+![notebook](readme/notebook.jpg)
 
 # web201-projectbook
 
@@ -16,7 +16,7 @@ The goal for this first lab is to add to projects the concept of a page. For the
 
 With each project I want to be able to create groups which I can use to group contacts, tasks, and other various items together. For example see the image below.
 
-![contact-list](contacts.jpg)
+![contact-list](readme/contacts.png)
 
 
 
