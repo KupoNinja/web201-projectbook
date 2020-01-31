@@ -3,7 +3,6 @@ import { STORE } from "../store.js";
 
 export class GroupController {
     createGroup() {
-        debugger;
         event.preventDefault();
         let form = event.target;
         try {
@@ -18,4 +17,18 @@ export class GroupController {
             alert(error);
         }
     }
+
+    drawGroupForm() {
+    let template = /*html*/ `
+    <h2>Enter Group:</h2>
+    <form onsubmit="app.groupController.createGroup()">
+      <label for="groupName">Group Name:</label>
+      <input name="groupName" type="text" required />
+      <label for="groupColor">Choose Group Color:</label>
+      <input name="groupColor" type="color" value="#015668" required />
+      <button type="submit">Submit</button>
+    </form>
+    `;
+    document.getElementById("groups").innerHTML = template;
+}
 }

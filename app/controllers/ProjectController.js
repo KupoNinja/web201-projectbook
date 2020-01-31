@@ -26,6 +26,8 @@ function drawProjectDetails() {
   let template = /*html*/ `
     <h1 class="project-title">${project.name}</h1>
     <p class="project-description">${project.description}</p>
+    <div id="groups"></div>
+    <button onclick="app.groupController.drawGroupForm()">Add a Group</button>
     `;
   document.getElementById("projectDetails").innerHTML = template;
 }
