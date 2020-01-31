@@ -7,4 +7,12 @@ export class Contact {
         this.groupId = groupId;
         this.projectId = projectId
     }
+
+    get ListTemplate() {
+        return /*html*/ `
+            <div class="contact">
+                ${this.name}
+            </div>
+        `
+    }
 }

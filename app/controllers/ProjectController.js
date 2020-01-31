@@ -17,8 +17,7 @@ function drawProjectDetails() {
     return;
   }
   
-  let template = ;
-  document.getElementById("projectDetails").innerHTML = template;
+  document.getElementById("projectDetails").innerHTML = project.DetailsTemplate;
 }
 
 // The controllers job is to manage view
