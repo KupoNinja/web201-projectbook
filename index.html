@@ -15,6 +15,16 @@
       <input name="projectDescription" type="text" required />
       <button type="submit">Submit</button>
     </form>
+    <form onsubmit="app.contactController.createContact()">
+      <label for="contactName">Contact Name</label>
+      <input name="contactName" type="text" required />
+      <label for="contactGroup">Group</label>
+      <select name="contactGroup">
+        <option value="">Developers</option>
+        <option value="">Product Owner</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
 
     <div id="projects"></div>
     <div id="projectDetails"></div>
