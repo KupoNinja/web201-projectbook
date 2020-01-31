@@ -14,7 +14,8 @@ class Store {
     groups: [
       new Group({ name: "Developers", color: "#015668", projectId: "8" }),
       new Group({ name: "Product Owner", color: "#ffd369", projectId: "dfjslksa" })
-    ]
+    ],
+    contacts: []
   };
 }
 
