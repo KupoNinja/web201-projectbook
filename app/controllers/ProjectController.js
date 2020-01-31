@@ -44,7 +44,9 @@ export class ProjectController {
     try {
       // @ts-ignore
       projectService.createProject({
+        // @ts-ignore
         name: form.projectName.value,
+        // @ts-ignore
         description: form.projectDescription.value
       });
       // @ts-ignore

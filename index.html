@@ -7,14 +7,20 @@
     <title>Project Book</title>
   </head>
   <body>
-    <button onclick="app.projectController.createProject()">
-      Create Project
-    </button>
+    <h2>Enter Project:</h2>
     <form onsubmit="app.projectController.createProject()">
       <label for="projectName">Project Name</label>
       <input name="projectName" type="text" required />
       <label for="projectDescription">Project Description</label>
-      <input name="projectDescription" type="text" required>
+      <input name="projectDescription" type="text" required />
+      <button type="submit">Submit</button>
+    </form>
+    <h2>Enter Group:</h2>
+    <form onsubmit="app.groupController.createGroup()">
+      <label for="groupName">Group Name:</label>
+      <input name="groupName" type="text" required />
+      <label for="groupColor">Choose Group Color:</label>
+      <input name="groupColor" type="color" value="#015668" required />
       <button type="submit">Submit</button>
     </form>
 
