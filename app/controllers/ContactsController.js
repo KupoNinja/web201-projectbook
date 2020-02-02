@@ -17,12 +17,14 @@ export class ContactsController {
     createContact() {
         try {
             event.preventDefault();
+            debugger;
             let form = event.target;
             let contact = {
                 // @ts-ignore
-                name: form.name.value
+                name: form.contactName.value
             };
             contactService.createContact(contact);
+            console.log(STORE.state.contacts)
             drawContacts();
             // @ts-ignore
             form.reset();
